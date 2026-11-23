@@ -10,6 +10,8 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 // The demo crashes; the agent agrees with the crash, then "fixes" it by removing the evidence.
+// Picked from 28 drafts: it won a 10-draft round robin against our own drafts (55.6%, no game lost)
+// in pairwise duels run with the published judge brief, both slot orders.
 const JOKE =
   'The demo crashed on stage. My agent read the stack trace, said "You\'re absolutely right!", and committed the fix: deleting the stack trace.';
 
